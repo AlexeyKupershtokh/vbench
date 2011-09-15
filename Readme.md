@@ -13,7 +13,7 @@
 var vbench = require('../')
   , suite = vbench.createSuite({ path: 'my-benchmark.png' });
 
-var n = 3
+var n = 150
   , vals = [];
 
 while (n--) vals.push('test');
