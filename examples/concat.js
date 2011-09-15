@@ -7,7 +7,7 @@ var vbench = require('../');
 
 var suite = vbench.createSuite();
 
-var n = 30
+var n = 3
   , vals = [];
 
 while (n--) vals.push('test');
@@ -28,6 +28,5 @@ suite.bench('+=', function(next){
   }
   next();
 });
-
 
 suite.run();
