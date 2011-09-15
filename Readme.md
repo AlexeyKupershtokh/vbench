@@ -1,7 +1,13 @@
 
 # vbench
 
-  visual benchmarking with node-canvas
+  visual benchmarking for ndoe.js using [node-canvas](http://github.com/learnboost/node-canvas).
+
+  ![](http://f.cl.ly/items/1e2N3y10301F2M2n2g0G/Screenshot.png)
+
+## Running Examples
+
+     $ node examples/args-to-array.js && open out.png
 
 ## License 
 
