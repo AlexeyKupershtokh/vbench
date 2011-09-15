@@ -7,7 +7,7 @@ var vbench = require('../');
 
 var suite = vbench.createSuite();
 
-var n = 1500
+var n = 100
   , vals = [];
 
 while (n--) vals.push('test');
