@@ -5,6 +5,39 @@
 
   ![](http://f.cl.ly/items/1e2N3y10301F2M2n2g0G/Screenshot.png)
 
+## Usage
+
+  vbench uses the [uubench](https://github.com/akdubya/uubench) library, and node-canvas for charting. You may pass uubench `Suite` options to `vbench.createSuite()`, as well as vbench-specific options such as `path`.
+
+```js
+var vbench = require('../')
+  , suite = vbench.createSuite({ path: 'my-benchmark.png' });
+
+var n = 3
+  , vals = [];
+
+while (n--) vals.push('test');
+
+suite.bench('Array#join()', function(next){
+  var arr = [];
+  for (var i = 0, len = vals.length; i < len; ++i) {
+    arr.push(vals[i]);
+  }
+  var str = arr.join('');
+  next();
+});
+
+suite.bench('+=', function(next){
+  var str = '';
+  for (var i = 0, len = vals.length; i < len; ++i) {
+    str += vals[i];
+  }
+  next();
+});
+
+suite.run();
+```
+
 ## Running Examples
 
      $ node examples/args-to-array.js && open out.png
