@@ -1,7 +1,7 @@
 
 # vbench
 
-  visual benchmarking for ndoe.js using [node-canvas](http://github.com/learnboost/node-canvas).
+  visual benchmarking for node.js using [node-canvas](http://github.com/learnboost/node-canvas).
 
   ![](http://f.cl.ly/items/2h0G231k1E2B0s183f2S/Screenshot.png)
 
