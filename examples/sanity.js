@@ -11,7 +11,6 @@ suite.bench('500ms', function(next){
   setTimeout(next, 500);
 });
 
-
 suite.bench('1s', function(next){
   setTimeout(next, 1000);
 });
