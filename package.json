@@ -1,6 +1,6 @@
 {
     "name": "vbench"
-  , "version": "0.0.2"
+  , "version": "0.1.0"
   , "description": "visual benchmarking with node-canvas"
   , "keywords": ["bench", "benchmark", "canvas", "performance"]
   , "author": "TJ Holowaychuk <tj@vision-media.ca>"
